@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Admin</title>
+  <meta name="description" content="Private project manager for the portfolio website.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="admin">
+  <div class="page-shell">
+    <div class="utility-bar">
+      <div></div>
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        title="Toggle theme"
+      >
+        <span class="theme-toggle__track">
+          <span class="theme-toggle__thumb"></span>
+        </span>
+        <span class="theme-toggle__label">Light mode</span>
+      </button>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Portfolio Admin</a>
+      <nav class="site-nav">
+        <a href="index.html">View Portfolio</a>
+        <a href="#project-form">Add Project</a>
+      </nav>
+    </header>
+
+    <main class="admin-layout">
+      <section class="section-card admin-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Private Dashboard</p>
+            <h1>Manage Projects</h1>
+          </div>
+          <p class="section-heading__text">
+            Upload a project thumbnail, add the description and link, then update your public portfolio instantly.
+          </p>
+        </div>
+
+        <div id="admin-feedback" class="status-message hidden" role="status" aria-live="polite"></div>
+
+        <form id="project-form" class="project-form" novalidate>
+          <label class="form-field">
+            <span>Title</span>
+            <input id="title" name="title" type="text" placeholder="Enter project title" required>
+          </label>
+
+          <label class="form-field">
+            <span>Description</span>
+            <textarea
+              id="description"
+              name="description"
+              rows="5"
+              placeholder="Built using HTML, CSS, JavaScript, PHP. Tools used: Canva, CapCut, vMix."
+              required
+            ></textarea>
+          </label>
+
+          <label class="form-field">
+            <span>Thumbnail Image</span>
+            <input id="image" name="image" type="file" accept="image/*" required>
+            <small class="field-help">Use a clear preview image that represents the project well.</small>
+          </label>
+
+          <label class="form-field">
+            <span>Project Link <em>(optional)</em></span>
+            <input id="project-link" name="projectLink" type="url" placeholder="https://example.com/project">
+          </label>
+
+          <button id="submit-button" class="button button--primary" type="submit">
+            Add Project
+          </button>
+        </form>
+      </section>
+
+      <section class="section-card admin-projects">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Project Library</p>
+            <h2>Saved Projects</h2>
+          </div>
+          <p class="section-heading__text">
+            Remove projects anytime to keep your public portfolio updated.
+          </p>
+        </div>
+
+        <div id="admin-projects-loading" class="loading-state">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Loading project list...</p>
+        </div>
+
+        <div id="admin-projects-empty" class="empty-state hidden">
+          <h3>No projects saved</h3>
+          <p>Your saved projects will appear here after you add one.</p>
+        </div>
+
+        <div id="admin-projects-list" class="admin-projects-list hidden"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabaseClient.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

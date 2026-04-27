@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jedrick Portfolio</title>
+  <meta
+    name="description"
+    content="Modern responsive web portfolio showcasing projects, stack, tools, and current learning."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <div class="page-shell">
+    <div class="utility-bar">
+      <div></div>
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        title="Toggle theme"
+      >
+        <span class="theme-toggle__track">
+          <span class="theme-toggle__thumb"></span>
+        </span>
+        <span class="theme-toggle__label">Light mode</span>
+      </button>
+    </div>
+
+    <main>
+      <section class="hero section-card">
+        <div class="hero__content">
+          <p class="eyebrow top">My Portfolio</p>
+          <h1>Hi, I'm Jedrick Miclat</h1>
+          <p class="hero__title">Website Developer</p>
+          <p class="hero__intro">
+            I build responsive websites and digital experiences that combine clean structure,
+            modern visuals, and practical functionality. I care about interfaces that feel
+            polished, easy to use, and ready for real-world presentation.
+          </p>
+
+          <div class="social-links social-links--inline">
+            <a class="social-link" href="#" aria-label="Instagram">
+              <img src="assets/icons/instagram.svg" alt="">
+            </a>
+            <a class="social-link" href="#" aria-label="Facebook">
+              <img src="assets/icons/facebook.svg" alt="">
+            </a>
+            <a class="social-link" href="#" aria-label="Threads">
+              <img src="assets/icons/threads.svg" alt="">
+            </a>
+            <a class="social-link" href="#" aria-label="TikTok">
+              <img src="assets/icons/tiktok.svg" alt="">
+            </a>
+            <a class="social-link" href="#" aria-label="Telegram">
+              <img src="assets/icons/telegram.svg" alt="">
+            </a>
+            <a class="social-link" href="#" aria-label="GitHub">
+              <img src="assets/icons/github.svg" alt="">
+            </a>
+          </div>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="resume.pdf" download>Download Resume</a>
+            <a class="button button--ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero-card">
+            <img src="IMAGES/profile2.jpg" alt="Profile portrait">
+          </div>
+          <div class="message-overlay" aria-label="Call to action">
+            <div class="message-overlay__inner">
+              <span class="message-overlay__text">Need a Website?</span>
+              <span class="message-overlay__text">Let's Build It</span>
+              <span class="message-overlay__text">Your Ideas,</span>
+              <span class="message-overlay__text">My Code</span>
+              <span class="message-overlay__text">Message Me for Projects</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview-grid" id="about">
+        <article class="section-card info-panel">
+          <p class="eyebrow">About Me</p>
+          <h2>Open for Website Projects - Students | Real Clients</h2>
+          <p>
+            I accept website projects from first-year college students and real clients.
+            I build responsive, modern, and well-structured websites designed to provide
+            a smooth experience across all devices. I am dedicated to delivering quality
+            work while gaining real-world development experience.
+          </p>
+
+          <div class="tools-section">
+            <p class="eyebrow">Tools</p>
+            <div class="tool-gallery">
+              <article class="tool-card">
+                <img src="TOOLS/CANVA.jpg" alt="Canva logo">
+              </article>
+              <article class="tool-card">
+                <img src="TOOLS/CAPCUT.jpg" alt="CapCut logo">
+              </article>
+              <article class="tool-card">
+                <img src="TOOLS/VMIX.jpg" alt="vMix logo">
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="section-card info-panel" id="skills">
+          <p class="eyebrow">Tech Stack</p>
+          <h2>Languages & Tools I Work With</h2>
+          <div class="logo-grid">
+            <article class="logo-card">
+              <img src="assets/icons/html5.svg" alt="HTML5 logo">
+            </article>
+            <article class="logo-card">
+              <img src="assets/icons/css3.svg" alt="CSS3 logo">
+            </article>
+            <article class="logo-card">
+              <img src="assets/icons/javascript.svg" alt="JavaScript logo">
+            </article>
+            <article class="logo-card">
+              <img src="assets/icons/wordpress.svg" alt="WordPress logo">
+            </article>
+            <article class="logo-card">
+              <img src="assets/icons/git.svg" alt="Git logo">
+            </article>
+            <article class="logo-card">
+              <img src="assets/icons/github.svg" alt="GitHub logo">
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-card learning-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Current Learning</p>
+          </div>
+        </div>
+
+        <div class="learning-grid">
+          <article class="learning-card">
+            <img src="assets/icons/react.svg" alt="React logo">
+            <span>React</span>
+          </article>
+          <article class="learning-card">
+            <img src="assets/icons/tailwind.svg" alt="Tailwind CSS logo">
+            <span>Tailwind CSS</span>
+          </article>
+          <article class="learning-card">
+            <img src="assets/icons/nodejs.svg" alt="Node.js logo">
+            <span>Node.js</span>
+          </article>
+          <article class="learning-card">
+            <img src="assets/icons/express.svg" alt="Express logo">
+            <span>Express</span>
+          </article>
+          <article class="learning-card">
+            <img src="assets/icons/mysql.svg" alt="MySQL logo">
+            <span>MySQL</span>
+          </article>
+          <article class="learning-card">
+            <img src="assets/icons/python.svg" alt="Python logo">
+            <span>Python</span>
+          </article>
+          <article class="learning-card">
+            <img src="assets/icons/php.svg" alt="PHP logo">
+            <span>PHP</span>
+          </article>
+          <article class="learning-card">
+            <img src="assets/icons/networking.svg" alt="Networking icon">
+            <span>Networking Basics</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card certificates-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Certificates</p>
+            <h2>Training and Learning Milestones</h2>
+          </div>
+        </div>
+
+        <div class="certificates-grid">
+          <article class="certificate-card">
+            <img src="CERTIFICATES/certificate-1.jpg" alt="Certificate 1">
+          </article>
+          <article class="certificate-card">
+            <img src="CERTIFICATES/certificate-2.png" alt="Certificate 2">
+          </article>
+          <article class="certificate-card">
+            <img src="CERTIFICATES/certificate-3.png" alt="Certificate 3">
+          </article>
+          <article class="certificate-card">
+            <img src="CERTIFICATES/certificate-4.png" alt="Certificate 4">
+          </article>
+          <article class="certificate-card">
+            <img src="CERTIFICATES/certificate-5.png" alt="Certificate 5">
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section-card" id="projects">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected Projects</p>
+            <h2>Recent Work</h2>
+          </div>
+        </div>
+
+        <div id="project-feedback" class="status-message hidden" role="status" aria-live="polite"></div>
+
+        <div id="projects-loading" class="loading-state">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Loading projects...</p>
+        </div>
+
+        <div id="projects-empty" class="empty-state hidden">
+          <h3>No projects yet</h3>
+          <p>Projects will appear here once they are added to the portfolio.</p>
+        </div>
+
+        <div id="projects-grid" class="projects-grid hidden" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+
+  <button class="scroll-top-button hidden" id="scroll-top-button" type="button" aria-label="Scroll to top">
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <dialog class="certificate-viewer" id="certificate-viewer">
+    <button class="certificate-viewer__close" id="certificate-viewer-close" type="button" aria-label="Close certificate viewer">Close</button>
+    <img class="certificate-viewer__image" id="certificate-viewer-image" src="" alt="Certificate preview">
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabaseClient.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
