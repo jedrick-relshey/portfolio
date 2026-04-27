@@ -828,6 +828,10 @@ body.dark-mode .button--danger {
 .social-link img {
   width: 22px;
   height: 22px;
+  filter: none;
+}
+
+body.dark-mode .social-link img {
   filter: brightness(0) saturate(100%) invert(85%) sepia(21%) saturate(863%) hue-rotate(165deg) brightness(99%) contrast(93%);
 }
 
