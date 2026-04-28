@@ -145,6 +145,7 @@ textarea {
 }
 
 .hero__header {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -152,10 +153,12 @@ textarea {
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 3.8rem;
-}
+} 
 
-.hero__header .theme-toggle {
-  flex-shrink: 0;
+.hero__topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.15rem;
 }
 
 .eyebrow {
@@ -795,16 +798,20 @@ body.dark-mode .button--danger {
 }
 
 .theme-toggle {
+  position: fixed;
+  top: 0rem;
+  right: 1rem;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   padding: 0.55rem;
-  border: 1px solid var(--surface-border);
-  border-radius: 999px;
-  background: var(--surface-strong);
-  color: var(--title);
-  box-shadow: var(--card-shadow);
+  border: none;
+  background: transparent;
+  box-shadow: none;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .social-links {
@@ -974,6 +981,18 @@ body.dark-mode .theme-toggle__thumb {
 
   .message-overlay {
     bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .theme-toggle {
+    position: absolute;
+    top: -1rem;
+    right: 0.75rem;
+  }
+
+  .hero-card {
+    position: relative;
   }
 }
 
