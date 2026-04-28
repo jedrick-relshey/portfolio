@@ -2,26 +2,27 @@ const THEME_STORAGE_KEY = "portfolio-theme";
 
 function initializeTheme() {
   const toggleButton = document.getElementById("theme-toggle");
-  const toggleLabel = toggleButton?.querySelector(".theme-toggle__label");
   const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
   const currentTheme = savedTheme === "dark" ? "dark" : "light";
 
-  applyTheme(currentTheme, toggleLabel);
+  applyTheme(currentTheme);
 
   toggleButton?.addEventListener("click", () => {
     const nextTheme = document.body.classList.contains("dark-mode") ? "light" : "dark";
-    applyTheme(nextTheme, toggleLabel);
+    applyTheme(nextTheme);
     localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+  });
+
+  window.addEventListener("storage", (event) => {
+    if (event.key === THEME_STORAGE_KEY) {
+      applyTheme(event.newValue === "dark" ? "dark" : "light");
+    }
   });
 }
 
-function applyTheme(theme, labelElement) {
+function applyTheme(theme) {
   const isDark = theme === "dark";
   document.body.classList.toggle("dark-mode", isDark);
-
-  if (labelElement) {
-    labelElement.textContent = isDark ? "Dark mode" : "Light mode";
-  }
 }
 
 function setVisibleState({ loading, empty, grid }) {

@@ -18,26 +18,23 @@
 </head>
 <body data-page="home">
   <div class="page-shell">
-    <div class="utility-bar">
-      <div></div>
-      <button
-        class="theme-toggle"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle dark mode"
-        title="Toggle theme"
-      >
-        <span class="theme-toggle__track">
-          <span class="theme-toggle__thumb"></span>
-        </span>
-        <span class="theme-toggle__label">Light mode</span>
-      </button>
-    </div>
-
     <main>
       <section class="hero section-card">
         <div class="hero__content">
-          <p class="eyebrow top">My Portfolio</p>
+          <div class="hero__header">
+            <p class="eyebrow top">My Portfolio</p>
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Toggle dark mode"
+              title="Toggle theme"
+            >
+              <span class="theme-toggle__track">
+                <span class="theme-toggle__thumb"></span>
+              </span>
+            </button>
+          </div>
           <h1>Hi, I'm Jedrick Miclat</h1>
           <p class="hero__title">Website Developer</p>
           <p class="hero__intro">
@@ -47,22 +44,22 @@
           </p>
 
           <div class="social-links social-links--inline">
-            <a class="social-link" href="https://www.instagram.com/jedrickmiclat/" target="_blank"  aria-label="Instagram">
+            <a class="social-link" href="https://www.instagram.com/jedrickmiclat/" target="_blank" rel="noreferrer" aria-label="Instagram">
               <img src="assets/icons/instagram.svg" alt="Instagram icon">
             </a>
-            <a class="social-link" href="https://www.facebook.com/jmiclat.26" target="_blank"  aria-label="Facebook">
+            <a class="social-link" href="https://www.facebook.com/jmiclat.26" target="_blank" rel="noreferrer" aria-label="Facebook">
               <img src="assets/icons/facebook.svg" alt="Facebook icon">
             </a>
-            <a class="social-link" href="https://www.threads.com/@jedrickmiclat" target="_blank"  aria-label="Threads">
+            <a class="social-link" href="https://www.threads.com/@jedrickmiclat" target="_blank" rel="noreferrer" aria-label="Threads">
               <img src="assets/icons/threads.svg" alt="Threads icon">
             </a>
-            <a class="social-link" href="https://www.tiktok.com/@jdjdmclt?" target="_blank" aria-label="TikTok">
+            <a class="social-link" href="https://www.tiktok.com/@jdjdmclt?" target="_blank" rel="noreferrer" aria-label="TikTok">
               <img src="assets/icons/tiktok.svg" alt="TikTok icon">
             </a>
             <a class="social-link" href="#" aria-label="Telegram">
               <img src="assets/icons/telegram.svg" alt="Telegram icon">
             </a>
-            <a class="social-link" href="https://github.com/jedrick-relshey" target="_blank" aria-label="GitHub">
+            <a class="social-link" href="https://github.com/jedrick-relshey" target="_blank" rel="noreferrer" aria-label="GitHub">
               <img src="assets/icons/github.svg" alt="GitHub icon">
             </a>
           </div>
@@ -118,7 +115,7 @@
 
         <article class="section-card info-panel" id="skills">
           <p class="eyebrow">Tech Stack</p>
-          <h2>Languages & Tools I Work With</h2>
+          <h2>Languages &amp; Tools I Work With</h2>
           <div class="logo-grid">
             <article class="logo-card">
               <img src="assets/icons/html5.svg" alt="HTML5 logo">
@@ -241,7 +238,7 @@
   </div>
 
   <button class="scroll-top-button hidden" id="scroll-top-button" type="button" aria-label="Scroll to top">
-    <span aria-hidden="true">↑</span>
+    <span aria-hidden="true">&#8593;</span>
   </button>
 
   <dialog class="certificate-viewer" id="certificate-viewer">
